@@ -91,10 +91,10 @@ export class TestCubeComponent implements OnInit {
           this.playerShip.velocity.z += +0.01;
           break;
         case "ArrowLeft":
-          this.playerShip.model.rotation.y += 0.05;
+          this.playerShip.model.children[0].rotation.y += 0.05;
           break;
         case "ArrowRight":
-          this.playerShip.model.rotation.y += -0.05;
+          this.playerShip.model.children[0].rotation.y += -0.05;
           break;
         case "Space":
           this.fire();
